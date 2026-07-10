@@ -1,0 +1,24 @@
+@font-face { font-family: "Elms Sans"; src: url("./assets/ElmsSans-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Elms Sans"; src: url("./assets/ElmsSans-Bold.ttf") format("truetype"); font-weight: 700; }
+:root { color: #11110f; background: #f1f1ee; font-family: "Elms Sans", -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f1f1ee; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.legal-header, .legal-main, .legal-footer { width: min(920px, calc(100% - 40px)); margin-inline: auto; }
+.legal-header { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid rgba(17,17,15,.14); }
+.legal-brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; text-decoration: none; }
+.legal-mark { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 8px; background: #11110f; color: white; font-size: 14px; }
+.legal-nav { display: flex; gap: 18px; color: #6d6d67; font-size: 12px; font-weight: 700; }
+.legal-main { padding: 74px 0 90px; }
+.legal-eyebrow { color: #787872; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+h1 { margin: 14px 0 18px; font-size: clamp(38px, 6vw, 64px); line-height: 1.05; }
+.legal-lead { max-width: 680px; color: #65655f; font-size: 16px; }
+.legal-content { max-width: 720px; margin-top: 58px; }
+.legal-content section { padding: 26px 0; border-top: 1px solid rgba(17,17,15,.14); }
+.legal-content h2 { margin: 0 0 10px; font-size: 21px; line-height: 1.2; }
+.legal-content p, .legal-content li { color: #5e5e58; font-size: 14px; }
+.legal-content ul { margin: 0; padding-left: 20px; }
+.notice { padding: 16px; border-left: 3px solid #11110f; background: #fff; }
+.legal-footer { min-height: 86px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(17,17,15,.14); color: #777770; font-size: 11px; font-weight: 700; }
+.legal-footer nav { display: flex; gap: 16px; }
+@media (max-width: 560px) { .legal-header, .legal-main, .legal-footer { width: min(100% - 32px, 520px); } .legal-nav { gap: 10px; } .legal-main { padding-top: 52px; } }
